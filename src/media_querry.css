@@ -1,0 +1,45 @@
+@media screen and (max-width: 1000px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .new-bar {
+        display: flex;
+        position: fixed;
+        width: 100vw;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 5rem;
+        background-color: rgb(21, 0, 80);
+        color: white;
+        cursor: pointer;
+    }
+    .menu-bar{
+        height: 2.4rem;
+        width: 2.4rem;
+        margin-right: 2.5rem;
+    }
+    #logo{
+        margin-left: 1.5rem;
+    }
+    .header p{
+        font-size: 2.5rem;
+        margin-bottom: 3.5rem;
+    }
+
+}
+
+
+@media screen and ( min-width: 250px) {
+    body{
+        margin: 0px 0px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .modalContainer{
+        width: 80%;
+    }
+}

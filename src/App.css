@@ -1,0 +1,345 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Orbitron:wght@600&family=Poppins:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+body{
+  background-color: rgb(220, 230, 231);
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+#logo {
+  width: 15rem;
+  height: 5rem;
+  padding: 1.2rem;
+  margin-top: 2.2rem;
+}
+#logo:hover{
+  width: 16rem;
+  height: 5.3rem;
+  cursor:pointer;
+}
+
+.right-bar {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 5rem;
+  font-size: 1.4rem;
+  width: 53vw;
+}
+
+.right-bar li a:hover{
+  color:rgb(243, 239, 238);
+  text-decoration: underline;
+  text-underline-offset: 0.7rem;
+  text-shadow: 2px 2px #1632cf;
+  z-index: 10px;
+}
+.right-bar li a:active{
+  color:rgb(238, 238, 243);
+}
+.right-bar li a:visited{
+  color:rgb(251, 251, 253);
+}
+
+
+.nav-bar {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5rem;
+  background-color: rgb(21, 0, 80);
+}
+.new-bar{
+  display: none;
+}
+.menubox{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px; 
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(233, 226, 226);
+  background-image: url('https://international.iitkgp.ac.in/static/website/img/campus/RK.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 40%;
+  height: 50vh;
+  margin-bottom: 20vh;
+  padding-top: 5rem;
+
+}
+.header p{
+  font-size: 4rem;
+  font-family: 'Orbitron', sans-serif;
+  color: rgb(253, 253, 253);
+}
+.btn{
+  width: 14rem;
+  height: 3rem;
+  margin-top: -2rem;
+  font-size: 1.3rem;
+  background-color: rgb(10, 2, 78);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: rgb(8, 80, 236);
+}
+
+
+
+
+
+
+
+.about{
+  text-align: left;
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  min-height: fit-content;
+  padding-bottom: 5rem;
+  background-color: rgb(100, 119, 172);
+  padding-top: 5rem;
+  
+}
+.about p{
+  font-size: 1.1rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.head{
+  font-size: 3rem;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+}
+
+
+
+
+
+.complaints{
+  min-height: 96vh;
+  margin-top: 5rem;
+  padding-top: 5rem;
+}
+.select{
+  margin-top: -3rem;
+  margin-bottom: 1rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.see-only{
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: rgb(252, 247, 247);
+  background-color: rgb(4, 54, 74);
+  border: none;
+  
+  
+}
+.status-list{
+  font-size: 1rem;
+  border-radius: 10px;
+  width: fit-content;
+}
+.status-list li{
+  color: white;
+  border: solid 0.001px;
+  border-radius: 5px;
+  padding: 3px 10px;
+  background-color: #176B87;
+}
+
+
+
+.complaint-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.accordian{
+  width: 70vw;
+}
+.item{
+  background: #176B87;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  width: 70vw;
+  border-radius: 1rem;
+  color: white;
+}
+.item:hover{
+  background-color: rgb(3, 22, 44);
+}
+.title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.title-head{
+  margin-right: 10vw;
+}
+.title-status{
+  margin-right: 18px;
+}
+.content{
+  max-height: 0;
+  overflow: hidden;
+}
+.content.show{
+  height: auto;
+  max-height: 9999px;
+}
+h2{
+  font-size: 1rem;
+  font-weight: 300;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.page-link{
+  color: rgb(21, 0, 80);
+}
+
+
+
+
+
+
+
+
+
+
+.footer{
+  min-width: 40vw;
+  text-align: center;
+  margin-top: 20vh;
+  margin-bottom: 3vh;
+  line-height: 3rem;
+}
+.social-icons{
+  width: 2rem;
+  height: 2rem;
+  color: rgb(21, 0, 80);
+}
+.contacts{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  
+}
+
+
+
+
+
+
+
+
+/*---------------Modal--------------*/
+.modal{
+  background-color: rgba(189, 189, 189, 0.4);
+  width: 100%;
+  height: 100%;
+  position:fixed;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+}
+.modalContainer{
+  position: fixed;
+  background-color: rgb(253, 253, 253);
+  width: 400px;
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+}
+.titleContainer{
+  display: flex;
+  justify-content: space-between;
+  height: 1.5rem;
+  margin-bottom: 1rem;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  line-height: 2.3rem;
+}
+h3{
+  color: rgb(87, 83, 81);
+}
+lable{
+  color: blue;
+  font-weight: 500;
+}
+input{
+  padding: 0.4rem 0.3rem;
+  align-items: center;
+}
+textarea{
+  padding: 1rem 1rem;
+  min-height: 8rem;
+}
+#submit{
+  width: 6rem;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  padding: 0.4rem;
+  background-color: rgb(21, 0, 80);
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.2rem;
+  border: none;
+  cursor: pointer;
+}
+#close{
+  border-radius: 50%;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.1rem;
+  background-color: rgb(21, 0, 80);
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+
